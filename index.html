@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canvas</title>
+    <style>
+        body{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            height: 90vh;
+        }
+
+        button{
+            width: 200px;
+            height: 45px;
+            background-color: rgba(0, 79, 182, 0.562);
+            border: none;
+            border-radius: 10px;
+            color: white;
+            font-weight: 500;
+            font-size: 1.2rem;
+            cursor: pointer;
+            outline: none;
+        }
+
+        canvas{
+            border-radius: 10px;
+            
+        }
+    </style>
+    <script type="module" src="./js/game.js" defer></script>
+</head>
+<body>
+    <button>Start Game</button>
+    <canvas id="myCanvas" width="700px" height="500px" style="border: 1px solid black">
+        <h1>Seu browser nao suporta o Canvas</h1>
+    </canvas>
+</body>
+</html>
